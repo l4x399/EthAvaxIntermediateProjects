@@ -7,7 +7,9 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "hardhat/console.sol";
 
 contract Token is ERC20, ERC20Burnable, Ownable {
-    constructor() ERC20("Meta Token", "MTA") {}
+    constructor() ERC20("Meta Token", "MTA") {
+        _mint(msg.sender, 10 * 10 ** decimals());
+    }
 
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);
