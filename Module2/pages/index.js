@@ -122,7 +122,7 @@ export default function HomePage() {
         </div>
         <button onClick={deposit} className="btn btn-primary mr-2">Deposit</button>
         <div className="form-group">
-          <label>Deposit Amount: </label>
+          <label>Withdraw Amount: </label>
           <input type="number" className="form-control" onChange={(e) => setWithdrawAmount(e.target.value)} />
         </div>
         <button onClick={withdraw} className="btn btn-danger">Withdraw</button>
