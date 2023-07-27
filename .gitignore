@@ -1,0 +1,4 @@
+.next/
+artifacts/
+cache/
+node_modules/
